@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+122
+<script>
+    (async ()=>{
+        axios.defaults.baseURL = 'http://localhost:3000'
+        // `withCredentials` 表示跨域请求时是否需要使用凭证
+        axios.defaults.withCredentials = true
+        const data= await axios.get("/users",{headers:{'X-Token':'123'}})
+        console.log(data)
+    })()
+
+</script>
+
+</body>
+</html>

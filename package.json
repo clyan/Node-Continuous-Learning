@@ -1,0 +1,9 @@
+{
+  "name": "node-continuous-Learning",
+  "version": "1.0.0",
+  "description": "node持续学习",
+  "main": "index.js",
+  "repository": "git@github.com:ywymoshi/Node-Continuous-Learning.git",
+  "author": "ywymoshi <46644748+ywymoshi@users.noreply.github.com>",
+  "license": "MIT"
+}

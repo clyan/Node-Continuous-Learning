@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script type='text/javascript'>
+    function JSONP ({url, params, callBackKey = 'cb', callBack}) {
+        JSONP.callBackId = JSONP.callBackId || 1;
+        let callBackId = JSONP.callBackId;
+        // 把要执行的回调加入到JSON对象中，避免污染window
+        JSONP.callBacks = JSONP.callBacks || [];
+        JSONP.callBacks[callBackId] = callBack;
+        // 把这个名称加入到参数中: 'cb=JSONP.callbacks[1]'
+        params[callBackKey] = `JSONP.callBacks[${callBackId}]`;
+
+        //防止全局导致多次调用冲突
+        // const callName = 'jsonpCallback';
+        // params[callBackKey] = callName;
+        // window[callName] = callBack;
+        let script = document.createElement('script');
+        script.setAttribute('src', url + '?' +Object.keys(params).map(item => {
+            // encodeURIComponent防止参数出现{a：1&b=1, b：2 }的情况，对&进行编码
+            return `${item}=${encodeURIComponent(params[item])}` 
+        }).join('&'));
+
+        document.body.appendChild(script);
+        JSONP.callBackId++;
+    }
+    JSONP({
+        url: 'http://localhost:8080/api/jsonp',
+        params: {
+            id: 1
+        },
+        callBack: function(res) {
+            console.log(res);
+        }
+    })
+    JSONP({
+        url: 'http://localhost:8080/api/jsonp',
+        params: {
+            id: 1
+        },
+        callBack: function(res) {
+            console.log(res);
+        }
+    })
+</script>
+<script>
+    window.jsonpCallback = function (res) {
+        console.log(res)
+    }
+</script>
+<script src='http://localhost:8080/api/jsonp?id=1&cb=jsonpCallback' type='text/javascript'></script>
+</html>

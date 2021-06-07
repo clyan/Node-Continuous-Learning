@@ -1,0 +1,170 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data": {
+    "beginTime": "2020-02-16 00:00:00",
+    "endTime": "2020-02-24 00:00:00",
+    "satelliteTasks": [
+      {
+        "satelliteName": "分类一",
+        "task": [
+          {
+            "taskName": "任务一",
+            "beginTime": "2020-02-16 20:21:30",
+            "endTime": "2020-02-17 20:22:10"
+          },
+          {
+            "taskName": "任务二",
+            "beginTime": "2020-02-16 20:21:30",
+            "endTime": "2020-02-17 20:22:00"
+          },
+          {
+            "taskName": "任务三",
+            "beginTime": "2020-02-17 20:21:30",
+            "endTime": "2020-02-23 20:22:10"
+          }
+        ]
+      },
+      {
+        "satelliteName": "分类二",
+        "task": [
+          {
+            "taskName": "任务一",
+            "beginTime": "2020-02-16 20:21:30",
+            "endTime": "2020-02-17 20:22:10"
+          },
+          {
+            "taskName": "任务二",
+            "beginTime": "2020-02-23 20:21:30",
+            "endTime": "2020-02-24 20:22:10"
+          },
+          {
+            "taskName": "任务三",
+            "beginTime": "2020-02-17 20:21:30",
+            "endTime": "2020-02-17 20:22:10"
+          }
+        ]
+      },
+      {
+        "satelliteName": "分类三",
+        "task": [
+          {
+            "taskName": "任务一",
+            "beginTime": "2020-02-16 20:21:30",
+            "endTime": "2020-02-17 20:22:10"
+          },
+          {
+            "taskName": "任务三",
+            "beginTime": "2020-02-17 20:21:30",
+            "endTime": "2020-02-17 20:22:10"
+          }
+        ]
+      },
+      {
+        "satelliteName": "分类四",
+        "task": [
+          {
+            "taskName": "任务一",
+            "beginTime": "2020-02-16 20:21:30",
+            "endTime": "2020-02-17 20:22:10"
+          },
+          {
+            "taskName": "任务三",
+            "beginTime": "2020-02-17 20:21:30",
+            "endTime": "2020-02-17 20:22:10"
+          }
+        ]
+      },
+      {
+        "satelliteName": "分类五",
+        "task": [
+          {
+            "taskName": "任务一",
+            "beginTime": "2020-02-16 20:21:30",
+            "endTime": "2020-02-17 20:22:10"
+          },
+          {
+            "taskName": "任务三",
+            "beginTime": "2020-02-17 20:21:30",
+            "endTime": "2020-02-17 20:22:10"
+          }
+        ]
+      },
+      {
+        "satelliteName": "分类六",
+        "task": [
+          {
+            "taskName": "任务一",
+            "beginTime": "2020-02-16 20:21:30",
+            "endTime": "2020-02-17 20:22:10"
+          },
+          {
+            "taskName": "任务三",
+            "beginTime": "2020-02-17 20:21:30",
+            "endTime": "2020-02-17 20:22:10"
+          }
+        ]
+      },
+      {
+        "satelliteName": "分类七",
+        "task": [
+          {
+            "taskName": "任务一",
+            "beginTime": "2020-02-16 20:21:30",
+            "endTime": "2020-02-17 20:22:10"
+          },
+          {
+            "taskName": "任务三",
+            "beginTime": "2020-02-17 20:21:30",
+            "endTime": "2020-02-17 20:22:10"
+          }
+        ]
+      },
+      {
+        "satelliteName": "分类八",
+        "task": [
+          {
+            "taskName": "任务一",
+            "beginTime": "2020-02-16 20:21:30",
+            "endTime": "2020-02-17 20:22:10"
+          },
+          {
+            "taskName": "任务三",
+            "beginTime": "2020-02-17 20:21:30",
+            "endTime": "2020-02-17 20:22:10"
+          }
+        ]
+      },
+      {
+        "satelliteName": "分类九",
+        "task": [
+          {
+            "taskName": "任务一",
+            "beginTime": "2020-02-16 20:21:30",
+            "endTime": "2020-02-17 20:22:10"
+          },
+          {
+            "taskName": "任务三",
+            "beginTime": "2020-02-17 20:21:30",
+            "endTime": "2020-02-17 20:22:10"
+          }
+        ]
+      },
+      {
+        "satelliteName": "分类十",
+        "task": [
+          {
+            "taskName": "任务一",
+            "beginTime": "2020-02-16 20:21:30",
+            "endTime": "2020-02-17 20:22:10"
+          },
+          {
+            "taskName": "任务三",
+            "beginTime": "2020-02-17 20:21:30",
+            "endTime": "2020-02-17 20:22:10"
+          }
+        ]
+      }
+    ]
+  }
+}
